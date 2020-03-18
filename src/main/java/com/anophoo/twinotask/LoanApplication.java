@@ -10,8 +10,9 @@ import lombok.Data;
 @Data
 public class LoanApplication {
 
-  @Id @GeneratedValue private Long id;
+  @Id @GeneratedValue private Long id; // generated id
 
+  private String personalId;
   private String firstName;
   private String lastName;
   private Date birthDate;
@@ -20,6 +21,7 @@ public class LoanApplication {
   private double liability;
   private double requestedAmount;
   private int requestedTerm; // months
+  private LoanStatus loanStatus;
 
   public LoanApplication() {}
 
@@ -40,5 +42,6 @@ public class LoanApplication {
     this.liability = liability;
     this.requestedAmount = requestedAmount;
     this.requestedTerm = requestedTerm;
+    this.loanStatus = LoanStatus.PENDING; // set status to pending at creation
   }
 }
