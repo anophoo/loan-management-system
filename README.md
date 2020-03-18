@@ -65,3 +65,6 @@ The solution should be submitted before the deadline and it is okay to send it i
 
 ## What have I done and in what order?
 - initialize spring boot project with some dependencies using https://start.spring.io/.
+- create workflow file (yml) on github to check project after pushing.
+- create LoanApplication entity using javax persistence API with annotation @Entity.
+- import lombok dependency not to write getter and setter methods again ever.
