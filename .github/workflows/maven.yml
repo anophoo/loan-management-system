@@ -1,0 +1,43 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@anophoo 
+anophoo
+/
+youtubish-web
+Private
+1
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+Updates style
+session-management @anophoo  e5ec440
+ 
+Java CI
+on: push
+ 
+Java CI
+This run
+Workflow file
+.github/workflows/maven.yml
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up JDK 11.0.4
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11.0.4
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
