@@ -62,3 +62,6 @@ Solution should be submitted as a link to a bitbucket or github repository which
 Solution should be self contained and should not need anything aside from JDK and git to run on either Linux or Windows.
 
 The solution should be submitted before the deadline and it is okay to send it incomplete, just make it runnable and implement as many requirements as you can within the allocated time.
+
+## What have I done and in what order?
+- initialize spring boot project with some dependencies using https://start.spring.io/.
