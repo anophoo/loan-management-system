@@ -1,4 +1,4 @@
-package com.anophoo.twinotask;
+package com.anophoo.twinotask.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

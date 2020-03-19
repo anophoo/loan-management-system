@@ -1,5 +1,7 @@
 package com.anophoo.twinotask;
 
+import com.anophoo.twinotask.model.LoanApplication;
+import com.anophoo.twinotask.repo.LoanRepository;
 import java.time.LocalDateTime;
 import java.time.Month;
 import org.springframework.beans.factory.annotation.Autowired;
