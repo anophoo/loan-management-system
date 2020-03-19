@@ -1,6 +1,6 @@
 package com.anophoo.twinotask;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,7 +15,7 @@ public class LoanApplication {
   private String personalId;
   private String firstName;
   private String lastName;
-  private Date birthDate;
+  private LocalDateTime birthDate;
   private String employer;
   private double salary;
   private double liability;
@@ -26,14 +26,16 @@ public class LoanApplication {
   public LoanApplication() {}
 
   public LoanApplication(
+      String personalId,
       String firstName,
       String lastName,
-      Date birthDate,
+      LocalDateTime birthDate,
       String employer,
       double salary,
       double liability,
       double requestedAmount,
       int requestedTerm) {
+    this.personalId = personalId;
     this.firstName = firstName;
     this.lastName = lastName;
     this.birthDate = birthDate;

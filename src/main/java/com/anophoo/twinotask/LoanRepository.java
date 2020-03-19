@@ -9,9 +9,9 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface LoanRepository extends CrudRepository<LoanApplication, Long> {
 
 
-  List<LoanApplication> findByLastName(@Param("last-name")String lastName);
+  List<LoanApplication> findByLastName(@Param("last￿Name")String lastName);
 
-  List<LoanApplication> findByFirstName(@Param("first-name")String firstName);
+  List<LoanApplication> findByFirstName(@Param("firstName")String firstName);
 
   List<LoanApplication> findByEmployer(@Param("employer")String employer);
 
