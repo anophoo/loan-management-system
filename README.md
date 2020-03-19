@@ -68,3 +68,27 @@ The solution should be submitted before the deadline and it is okay to send it i
 - create workflow file (yml) on github to check project after pushing.
 - create LoanApplication entity using javax persistence API with annotation @Entity.
 - import lombok dependency not to write getter and setter methods again ever.
+
+## Instructions
+- run application:
+```bash
+$ ./mvnw spring-boot:run
+```
+- add a loan with curl:
+```curl
+$ curl -i -H "Content-Type:application/json" -d '{"firstName": "Ana", "lastName": "Gurgenidze"}' http://localhost:8080/api/loans
+```
+- search a loan by first name:
+```curl
+$ curl http://localhost:8080/api/loans/search/findByFirstName?first-name=Ana
+```
+- PUT a loan in a db:
+```curl
+$ curl -X PUT -H "Content-Type:application/json" -d '{"firstName": "Ana", "lastName": "Gurgenidze"}' http://localhost:8080/api/loans/1
+$ curl http://localhost:8080/api/loans/1
+```
+- PUT replaces an entire record. Fields not supplied are replaced with null. You can use PATCH to update a subset of items.
+- DELETE a loan:
+```curl
+$ curl -X DELETE http://localhost:8080/api/loans/1
+```
