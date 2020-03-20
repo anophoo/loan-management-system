@@ -68,6 +68,7 @@ The solution should be submitted before the deadline and it is okay to send it i
 - create workflow file (yml) on github to check project after pushing.
 - create LoanApplication entity using javax persistence API with annotation @Entity.
 - import lombok dependency not to write getter and setter methods again ever.
+- ...
 
 ## Instructions
 - run application:
