@@ -24,6 +24,7 @@ public class LoanApplicationTest {
             2);
 
     // then
+    assertThat(loanApplication.getPersonalId()).isNotNull();
     assertThat(loanApplication.getLoanStatus()).isEqualTo(LoanStatus.PENDING);
   }
 }
