@@ -1,6 +1,5 @@
 package com.anophoo.twinotask.model;
 
-import com.anophoo.twinotask.LoanStatus;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

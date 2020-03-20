@@ -1,4 +1,4 @@
-package com.anophoo.twinotask.controller;
+package com.anophoo.twinotask.web;
 
 import com.anophoo.twinotask.model.LoanApplication;
 import com.anophoo.twinotask.repo.LoanRepository;

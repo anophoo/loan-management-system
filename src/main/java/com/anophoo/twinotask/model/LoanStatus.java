@@ -1,4 +1,4 @@
-package com.anophoo.twinotask;
+package com.anophoo.twinotask.model;
 
 public enum LoanStatus {
   APPROVED,

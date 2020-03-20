@@ -1,4 +1,4 @@
-package com.anophoo.twinotask;
+package com.anophoo.twinotask.exceptions;
 
 import javax.validation.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,4 +1,4 @@
-package com.anophoo.twinotask;
+package com.anophoo.twinotask.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

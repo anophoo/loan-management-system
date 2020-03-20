@@ -1,4 +1,4 @@
-package com.anophoo.twinotask;
+package com.anophoo.twinotask.db;
 
 import com.anophoo.twinotask.model.LoanApplication;
 import com.anophoo.twinotask.repo.LoanRepository;
