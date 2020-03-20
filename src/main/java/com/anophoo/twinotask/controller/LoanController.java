@@ -1,6 +1,5 @@
 package com.anophoo.twinotask.controller;
 
-import com.anophoo.twinotask.LoanNotFoundException;
 import com.anophoo.twinotask.model.LoanApplication;
 import com.anophoo.twinotask.repo.LoanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,14 +42,13 @@ public class LoanController {
     loanRepository.deleteById(id);
   }
 
-//    @PutMapping("/{id}")
-//    public LoanApplication updateLoanApplication(@RequestBody LoanApplication loanApplication,
-//   @PathVariable Long id) {
-//      if (loanApplication.getPersonalId() != id) {
-//        throw new Exception();
-//      }
-//      loanRepository.findById(id)
-//          .orElseThrow(Exception::new);
-//      return loanRepository.save(loanApplication);
-//    }
+  @PutMapping("/{id}")
+  public LoanApplication updateLoanApplication(
+      @RequestBody LoanApplication loanApplication, @PathVariable Long id) {
+    if (!loanApplication.getId().equals(id)) {
+      throw new RuntimeException();
+    }
+    loanRepository.findById(id).orElseThrow(RuntimeException::new);
+    return loanRepository.save(loanApplication);
+  }
 }
