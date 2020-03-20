@@ -7,8 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import lombok.Data;
 
-@Entity // this JPA annotation denotes the whole class for storage in a relational table
 @Data
+@Entity // this JPA annotation denotes the whole class for storage in a relational table
 public class LoanApplication {
 
   @Id @GeneratedValue private Long id; // generated id
