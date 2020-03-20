@@ -1,4 +1,4 @@
-package com.anophoo.twinotask.springbootconfig;
+package com.anophoo.twinotask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
